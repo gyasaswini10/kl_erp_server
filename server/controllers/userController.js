@@ -2,14 +2,7 @@ const jwt = require('jsonwebtoken');
 const User = require("../models/User");
 const bcrypt = require('bcrypt');
 
-const getCurrentUserId = (req) => {
 
-
-    const token = req.headers.authorization && req.headers.authorization.split(' ')[1];
-    if (!token) throw new Error('Unauthorized');
-    const decoded = jwt.verify(token, process.env.JWT_SECRET);
-    return decoded.id;
-};
 
 const register1= async (req, res) => {
     const { name, email, password } = req.body;
