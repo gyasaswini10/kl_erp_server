@@ -1,0 +1,10 @@
+create a component called feedback with the data passes through props or through collections 
+use following attributes for feedback 
+1.faculty id 
+2.faclty name
+3.course
+4.description of feedback
+use 5 faculty feedback details as a collection and pass as a props 
+create a component called counselor having stu count,id,branch
+use card layout for counselor and also use props
+Use Jquery for fips or  
