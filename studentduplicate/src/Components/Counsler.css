@@ -1,0 +1,28 @@
+/* Components/Counselor.css */
+.counselor-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+  }
+  
+  .counselor-card {
+    background-color: #f5f5f5;
+    border: 1px solid #efe4e4;
+    border-radius: 8px;
+    padding: 15px;
+    margin: 10px;
+    width: 200px;
+    text-align: center;
+  
+  }
+/*   
+  .counselor-card:hover {
+    transform: scale(1.05);
+  } */
+  
+  h1{
+    font-weight: 21;
+    font-size: 30px;
+  
+  }
