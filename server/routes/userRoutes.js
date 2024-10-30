@@ -1,19 +1,13 @@
 const express = require('express');
 const router = express.Router();
 const authenticateJWT = require('../middleware/authenticateJWT');
-const {
-    registerUser,
-    loginUser,
-    getCurrentUser,
-    updateUser,
-    deleteUser
-} = require('../controllers/userController');
+const {register1, login1, Currentuser, updateUser, deleteUser} = require('../controllers/userController');
 
-router.post('/register', registerUser);
+router.post('/register', register1);
 
-router.post('/login', loginUser);
+router.post('/login', login1);
 
-router.get('/me', authenticateJWT, getCurrentUser);
+router.get('/me', authenticateJWT, Currentuser);
 
 router.put('/me', authenticateJWT, updateUser);
 
