@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # kl_erp
 
 # Email sending based on  login details
