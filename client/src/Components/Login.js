@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import axios from 'axios';
 import { useAppContext } from '../Components/contexts/AppContext';
 import { useNavigate } from 'react-router-dom';
-
+import "./Login.css";
 const Login = () => {
   const { setUser, setUsername } = useAppContext();
   const [email, setEmail] = useState('');

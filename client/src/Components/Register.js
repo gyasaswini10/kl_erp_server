@@ -3,7 +3,7 @@ import axios from 'axios';
 import { useAppContext } from '../Components/contexts/AppContext'; 
 import { Link, useNavigate } from 'react-router-dom';
 
-
+import "./register.css";
 const Register = () => {
   const { setUser } = useAppContext(); 
   const [name, setName] = useState('');
