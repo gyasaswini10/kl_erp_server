@@ -9,12 +9,17 @@ const express = require('express');
 	connectDB();
 
 	const app = express();
-
+	try {
+		connectDB();
+	  } catch (error) {
+		console.error("Database connection failed:", error);
+		process.exit(1); // Exit process with failure
+	  }
 	app.use(cors());
 	app.use(express.json());
 
 	app.use('/api/users', userRoutes);
-	
+
 	app.listen(PORT, '0.0.0.0', () => {
   console.log(`Server running on port ${PORT}`);
 });
