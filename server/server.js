@@ -15,6 +15,12 @@ const express = require('express');
 		console.error("Database connection failed:", error);
 		process.exit(1); // Exit process with failure
 	  }
+	  app.use(cors({
+		origin: 'http://localhost:3000',  // Local React app URL
+		methods: ['GET', 'POST', 'PUT', 'DELETE'],
+		credentials: true
+	  }));
+	  
 	app.use(cors());
 	app.use(express.json());
 
