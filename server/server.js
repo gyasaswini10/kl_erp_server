@@ -16,7 +16,7 @@ const express = require('express');
 		process.exit(1); // Exit process with failure
 	  }
 	  app.use(cors({
-		origin: [ 'https://your-client-domain.com'],  // Local React app URL
+		origin: [ 'https://kl-erp-server.onrender.com'],  // Local React app URL
 		methods: ['GET', 'POST', 'PUT', 'DELETE'],
 		credentials: true
 	  }));
