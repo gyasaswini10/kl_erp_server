@@ -17,9 +17,14 @@ try {
 
 const app = express();
 
-// CORS configuration (make sure to only use this once)
+// CORS configuration
 app.use(cors({
-  origin: ['https://kl-erp-server.onrender.com', 'http://localhost:3000'],  // Allowed React app URLs
+  origin: [
+    'https://kl-erp-server.onrender.com',
+    'https://kl-erp-2.onrender.com',
+    'https://kl-erp-1.onrender.com',
+    'http://localhost:3000' // For local development
+  ],
   methods: ['GET', 'POST', 'PUT', 'DELETE'],
   credentials: true
 }));
